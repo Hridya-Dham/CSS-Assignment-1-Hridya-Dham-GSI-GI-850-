@@ -1,0 +1,147 @@
+/* -------------------------*/
+/* BASIC SETUP */
+/*-------------------------*/
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: large;
+}
+
+tr, td {
+    padding: 4px;
+}
+
+footer {
+    margin-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+/* Q2. Design the HTML form using all CSS properties. */
+
+/* -------------------------*/
+/* CLASSES*/
+/*-------------------------*/
+
+.centered {
+    text-align: center;
+}
+
+.table-centered {
+    margin-left: 35%;
+}
+
+.background {
+    background-color: #f2f2f2;
+}
+.records {
+    margin-left: 35%;
+    margin-right: auto;
+}
+.records, .records td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.btn[type="submit"] {
+
+    color: white;
+    background-color: #4CAF50;
+    margin-left: 40%; 
+    margin-top: 20px;
+    padding: 10px 10px;
+    width: 10%;
+    cursor: pointer;
+}
+
+.btn[type="reset"] {
+    color: white;
+    background-color: red;
+    margin-left: 2%; 
+    margin-top: 20px;
+    padding: 10px 10px;
+    width: 10%;
+    cursor: pointer;
+}
+
+.heading {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    position: fixed; /* Header section: it should not move while scrolling; demonstrating position: fixed */
+    margin-right: 0;
+    margin-left: 80%;
+    margin-top: 0;
+}
+
+.nav li {  
+    list-style: none;
+    float: right;  /* demonstrating float */
+    display: inline; 
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.box-1 {                  /* parent class */
+    overflow: auto;
+    position: relative; /* demonstrating position: relative  */
+    border: solid 2px blue;
+    
+}
+
+.box-1 h2 {
+    color: blue;
+    position: static; /* demonstrating position: static  */
+}
+
+.box-1 p {
+    color: black;
+}
+
+.logo {                  /* child class */
+    position: absolute; /* demonstrating position: absolute */
+    margin-top: 150px;
+    margin-left: 600px;
+    width: 200px;
+    height: auto;
+}
+
+.div-span { /* demonstrating display: block */
+    background-color: lightblue;
+    display: block; 
+}
+
+.div-p { /* demonstrating display: inline */
+    background-color: lightcoral;
+    display: inline;
+}
+
+.div-none { /* demonstrating display: none */
+    display: none;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.not-visible {
+    visibility: hidden;
+}
+/* -------------------------*/
+/* IDs & ATTRIBUTES */
+/*-------------------------*/
+
+input[type="date"], input[type="text"], input[type="tel"], textarea[id="address"], select {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+option[value="default"] {
+    display: none;
+}
+
+#srt {
+    margin-top: 3%;
+}

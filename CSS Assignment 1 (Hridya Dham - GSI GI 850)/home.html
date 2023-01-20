@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Q1. Design the form web page from HTML Assignment 2 using external CSS only. -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML ASSIGNMENT 2</title>
+  </head>
+  <body>
+    <!-- Q3. Create a Header section and it should not move while scrolling. (refer heading class)-->
+    <header>
+        <h1 class="heading">CSS ASSIGNMENT-1</h1>
+    </header>
+
+    <!-- FORMS -->
+    <div class="background">
+        <h1 class="centered">Student Registration Form</Form></h1>
+        <form>
+            <table class="table-centered">
+                <tr>
+                    <td>
+                        <label for="fullname"><b>Name : </b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="fullname" name="fullname" placeholder="Your Full Name...">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phno"><b>Phone No. : </b></label>
+                    </td>
+                    <td>
+                        <input type="tel" id="phno" name="phno" pattern="[0-9]{10}" placeholder="Your Phone No.">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date"><b>Date of Birth : </b></label>
+                    </td>
+                    <td>
+                        <input type="date" id="date" name="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label  for="address"><b>Address : </b></label>
+                    </td>
+                    <td>
+                        <textarea id="address" name="address" placeholder="Your Address..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Gender : </b></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" >Male
+                        <input type="radio" id="female" name="gender" value="female">Female
+                        <input type="radio" id="other" name="gender" value="other">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city"><b>City :</b></label>
+                    </td>
+                    <td>
+                        <select id="city" name="City">
+                            <option value="default" selected>Select City</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Bangalore">Bangalore</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Hobbies"><b>Hobbies : </b></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="hobb1" name="hobb1" value="Music">
+                        <label for="hobb1">Music</label>
+                        <input type="checkbox" id="hobb2" name="hobb2" value="Sports">
+                        <label for="hobb2">Sports</label>
+                        <input type="checkbox" id="hobb3" name="hobb3" value="Reading">
+                        <label for="hobb3">Reading</label>
+                        <input type="checkbox" id="hobb4" name="hobb4" value="VideoGames">
+                        <label for="hobb4">Video Games</label>
+                        <input type="checkbox" id="hobb5" name="hobb5" value="Gymming">
+                        <label for="hobb5">Gymming</label> 
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" class="btn">
+            <input type="reset" class="btn">   
+        </form>
+        <br>
+    </div>
+    <!-- STUDENT RECORDS TABLE -->
+
+    <h1 class="centered" id="srt">Student Records</h1>
+    <table class="records centered">
+        <tr>
+            <td>S.No.</td>
+            <td>Name</td>
+            <td>Phone No.</td>
+            <td>Gender</td>
+            <td>DOB</td>
+            <td>Interets</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Hridya Dham</td>
+            <td>9711162514</td>
+            <td>Male</td>
+            <td>18-Nov-2000</td>
+            <td>
+                Video Games 
+                <br>
+                Outdoor Sports
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Kunal Khandelwal</td>
+            <td>9514162314</td>
+            <td>Male</td>
+            <td>15-Aug-2001</td>
+            <td>
+                Video Games 
+                <br>
+                Sleeping
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ishita Kanojia</td>
+            <td>9821262514</td>
+            <td>Female</td>
+            <td>02-Dec-2000</td>
+            <td>
+                Content Creation 
+                <br>
+                Travelling
+                <br>
+                Music
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mehar Mutreja</td>
+            <td>9928262534</td>
+            <td>Male</td>
+            <td>15-Dec-2000</td>
+            <td>
+                Music 
+                <br>
+                Video Games
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Vaibhav Shakiya</td>
+            <td>9938272534</td>
+            <td>Male</td>
+            <td>10-Feb-2000</td>
+            <td>
+                Art 
+                <br>
+                Video Games
+                <br>
+                Music
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Q4. Create a sample demo demonstrating position, float, display and Visibility concepts. -->
+    <h2 class="centered">SAMPLE DEMO</h2> 
+    <div class="nav"> <!-- demonstrating float (refer class nav li)-->
+        <ul>
+            <li style="margin-right: 10px;"><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+    </div>
+    <div class="box-1">
+        <h2>CSS:</h2>
+        <img src="img/css.png" class="logo"> <!-- demonstrating positon (refer class logo)-->
+        <p class="desc">
+            Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).
+            CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+            CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts. This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+        </p>
+    </div>
+    <br>
+    <div class="box-2">
+        <span class="div-span"> 
+            This is an inline element but is behaving like a block element. <!-- demonstrating display: block (refer class div-span)-->
+        </span>
+        <p class="div-p">
+            This is a block element but is behaving like a inline element. <!-- demonstrating display: inline (refer class div-p)-->
+        </p>
+        <p class="div-none">
+            This is a paragraph but it will not display on the website. <!-- demonstrating display: none (refer class div-p)-->
+        </p>
+    </div>
+    <div class="box-3">
+        <span class="visible"> <!-- demonstrating visibility: visible (refer class visible)-->
+            This is a statement which will be visible on the website.
+        </span>
+        <br>
+        <span class="not-visible"> <!-- demonstrating visibility: hidden (refer class not-visible)-->
+            This is a statement which will not be visible on the website.
+        </span>
+    </div>
+
+    <footer>
+        Gemini Solutions Pvt. Ltd
+    </footer>
+  </body>
+</html>
